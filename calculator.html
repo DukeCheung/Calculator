@@ -1,0 +1,45 @@
+<!--实现功能：1.操作符不能连续出现
+              2.除数不能为0
+              3.处理了八进制输入，如021会处理为21
+              4.处理了精度问题
+              5.输入太多字体会变小，删除时会逐渐变大-->
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="calculator.css">
+  	<script src="calculator.js" type="text/javascript"></script>
+  	<title>简单计算器</title>
+  </head>
+
+  <body>
+    <div id="calculator">
+      <h1 id="_title">Calculator</h1>
+  	<div id="menu">
+  		<input id="screen"><br>
+      <div id="_button">
+      <button id="number7"  class="$input">7</button><!--
+      --><button id="number8"  class="$input">8</button><!--
+      --><button id="number9"  class="$input">9</button><!--
+      --><button id="divide"  class="$input">/</button><br><!--将这几行写在一行的原因是为了消去键之间的水平空隙-->
+      <button id="number4"  class="$input">4</button><!--
+      --><button id="number5"  class="$input">5</button><!--
+      --><button id="number6"  class="$input">6</button><!--
+      --><button id="multiply"  class="$input">*</button><br>
+      <button id="number1"  class="$input">1</button><!--
+      --><button id="number2"  class="$input">2</button><!--
+      --><button id="number3"  class="$input">3</button><!--
+      --><button id="minus"  class="$input">-</button><br>
+      <button id="number0"  class="$input">0</button><!--
+      --><button id="point"  class="$input">.</button><!--
+      --><button id="delete">←</button><!--
+      --><button id="plus"  class="$input">+</button><br>
+      <button id="left_parenthese"  class="$input">(</button><!--
+      --><button id="right_parenthese"  class="$input">)</button><!--
+      --><button id="ce">CE</button><!--
+      --><button id="evaluate">=</button>
+    </div>
+  	</div>
+  </div>
+  </body>
+</html>
